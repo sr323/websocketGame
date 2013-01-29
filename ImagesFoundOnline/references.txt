@@ -1,0 +1,1 @@
+http://code.google.com/p/gmaps-samples-v3/source/browse/trunk/talks/io2011/map-usability/images/zombie_sprite-fs8.png?r=265

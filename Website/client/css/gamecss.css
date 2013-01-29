@@ -1,0 +1,34 @@
+#gameCanvas{
+	border: 1px solid white;
+	height: 720px;
+	width: 1280px;
+	background: white;
+}
+
+#gameCanvasDiv{
+	border: 1px solid yellow;
+	/*Should be set the same to the original size of the canvas.
+	And when the canvas is changed javascript should be used to change the
+	width and height of this DIV also to keep the canvas in the center of
+	the screen. */
+	height: 720px;
+	width: 1280px;
+	margin: 20px auto;
+}
+
+#buttons{
+	width: 200px;
+	margin: 0 auto;
+}
+
+#buttons button{
+	font-family:"Times New Roman", Times, serif;
+	font-size: 20px;
+	border: 2px;
+	border-radius: 5px;
+	width: 200px;
+	height: 25px;
+	color: white;
+	background-color: #181818;
+	border: 2px solid #383838;
+}
