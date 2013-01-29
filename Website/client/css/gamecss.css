@@ -1,7 +1,7 @@
 #gameCanvas{
 	border: 1px solid white;
-	height: 720px;
-	width: 1280px;
+	height: 600px;
+	width: 800px;
 	background: white;
 }
 
@@ -11,8 +11,8 @@
 	And when the canvas is changed javascript should be used to change the
 	width and height of this DIV also to keep the canvas in the center of
 	the screen. */
-	height: 720px;
-	width: 1280px;
+	height: 600px;
+	width: 800px;
 	margin: 20px auto;
 }
 
