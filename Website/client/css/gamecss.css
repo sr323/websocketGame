@@ -1,12 +1,17 @@
 #gameCanvas{
-	border: 1px solid white;
-	height: 600px;
-	width: 800px;
-	background: white;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+}
+
+#frontCanvas{
+	position: absolute;
+	top: 0;
+	z-index: 2;
 }
 
 #gameCanvasDiv{
-	border: 1px solid yellow;
+	/*border: 1px solid yellow;*/
 	/*Should be set the same to the original size of the canvas.
 	And when the canvas is changed javascript should be used to change the
 	width and height of this DIV also to keep the canvas in the center of
@@ -16,6 +21,7 @@
 	margin: 20px auto;
 }
 
+/*
 #buttons{
 	width: 200px;
 	margin: 0 auto;
@@ -31,4 +37,4 @@
 	color: white;
 	background-color: #181818;
 	border: 2px solid #383838;
-}
+}*/

@@ -8,13 +8,16 @@ function resize(x, y){
 	canvas.style.height = y + "px";
 	canvasDiv.style.width = x + "px";
 	canvasDiv.style.height = y + "px";
+	canvas.width = 300;
+	canvas.width = 400;
+	canvas.height = 300;
 }
 
 /* Code from http://paulrouget.com/e/ctxfs/ */
 /* It didn't want to work any other way..-.- */
 /* For some reason has to be a html element. */
 function fullScreen(){
-	document.getElementById("gameCanvas").requestFullScreen();
+	document.getElementById("gameCanvasDiv").requestFullScreen();
 }
 
 HTMLElement.prototype.requestFullScreen = 

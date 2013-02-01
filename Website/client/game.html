@@ -15,10 +15,6 @@
 		<link rel="stylesheet" href="css/mainTemplate.css">
 		<link rel="stylesheet" href="css/gamecss.css">
 
-		<script type="text/javascript" src = "js/singleplayergame.js"></script>
-		<script type="text/javascript" src = "js/generalGame.js"></script>
-		<!--Scripts should be declared here-->
-
 	</head>
 
 	<body>
@@ -51,17 +47,24 @@
 		<div id = "mainContent">
 
 			<div id = "gameCanvasDiv">
-				<canvas id = "gameCanvas">
-					Your browser doesn't support HTML5s' canvas. Please download the latest
-					version of Google Chrome to get the best experience this website offers.
+				<canvas id="frontCanvas" width=800 height=600 style='width:800px;height:600px'></canvas>
+				<canvas id="gameCanvas" width=800 height=600 style='width:800px;height:600px'>
+					Your browser doesn't support HTML5s' canvas. Please download the latest version of Google Chrome to get the best experience this website offers.
 				</canvas>
 			</div>
-
-			<div id = "buttons">
+			<!--At the moment the positioning of the canvases(absolute) to have multiple canvases breaks the full screen function..
+			Annoying. 
+			<div id = "buttons"> 
 				<button onclick = "fullScreen()">Full Screen</button>
-			</div>
+			</div>-->
 
 		</div>
+
+		<script type="text/javascript" src = "js/generalGame.js"></script>
+		<script type="text/javascript" src = "js/singleplayergame.js"></script>
+		<script type="text/javascript" src = "js/preloadedimages.js"></script>
+		<script type="text/javascript" src = "js/Player.js"></script>
+		<script type="text/javascript" src = "js/raf.js"></script>
 
 	</body>
 
@@ -81,6 +84,7 @@
 	-->
 	<script>
 		singleinitialisation();
+		singleupdate();
 	</script>
 	
 </html>
