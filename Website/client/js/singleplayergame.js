@@ -113,6 +113,7 @@ function mousePosition(){
 		//East
 		player.setDir(4);
 	}
+	//Directions
 	else if(dirx < 10 && diry < -30){
 		player.setDir(1);
 	}
@@ -125,8 +126,6 @@ function mousePosition(){
 	else if(dirx > 10 && diry > 30){
 		player.setDir(5);
 	}
-
-	console.log('X:' + mouseX + ' Y:' + mouseY);
 };
 
 /*Game initialisation and handlers should be complete*/
@@ -142,10 +141,10 @@ function singleupdate(){
 function checkKeyInput(){
 	//At the moment keys are getting priority over others.
 	//Could be rectified with more if statements.
-
+	console.log('Y: ' + player.getY() + ' X: ' + player.getX());
 	//W + A
 	if(keys.isDown(87) && keys.isDown(65)){
-		if(player.getY()>81 && player.getX() > 15){
+		if(player.getY()>80 && player.getX() > 14){
 			player.setMoved(true);
 			player.setY(player.getY() - player.getmoveSpeed());
 			player.setX(player.getX() - player.getmoveSpeed());
@@ -153,7 +152,7 @@ function checkKeyInput(){
 	}
 	//W + D
 	else if(keys.isDown(87) && keys.isDown(68)){
-		if(player.getY()>81 && player.getX() > 15){
+		if(player.getY()>80 && player.getX() > 14){
 			player.setMoved(true);
 			player.setY(player.getY() - player.getmoveSpeed());
 			player.setX(player.getX() + player.getmoveSpeed());
@@ -161,7 +160,7 @@ function checkKeyInput(){
 	}
 	//S + A
 	else if(keys.isDown(83) && keys.isDown(65)){
-		if(player.getY()>81 && player.getX() > 15){
+		if(player.getY()>80 && player.getX() > 14){
 			player.setMoved(true);
 			player.setY(player.getY() + player.getmoveSpeed());
 			player.setX(player.getX() - player.getmoveSpeed());
@@ -169,7 +168,7 @@ function checkKeyInput(){
 	}
 	//S + D
 	else if(keys.isDown(83) && keys.isDown(68)){
-		if(player.getY()>81 && player.getX() > 15){
+		if(player.getY()>80 && player.getX() > 14){
 			player.setMoved(true);
 			player.setY(player.getY() + player.getmoveSpeed());
 			player.setX(player.getX() + player.getmoveSpeed());
