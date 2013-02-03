@@ -152,7 +152,11 @@ function checkKeyInput(){
 	}
 	//W + D
 	else if(keys.isDown(87) && keys.isDown(68)){
+<<<<<<< HEAD
 		if(player.getY()>80 && player.getX() > 14){
+=======
+		if(player.getY()>80 && player.getX()<785){
+>>>>>>> 5d680005d44bfd8efe4f2e0004a968d0fc063cbf
 			player.setMoved(true);
 			player.setY(player.getY() - player.getmoveSpeed());
 			player.setX(player.getX() + player.getmoveSpeed());
@@ -160,7 +164,11 @@ function checkKeyInput(){
 	}
 	//S + A
 	else if(keys.isDown(83) && keys.isDown(65)){
+<<<<<<< HEAD
 		if(player.getY()>80 && player.getX() > 14){
+=======
+		if(player.getY() <545 && player.getX() > 14){
+>>>>>>> 5d680005d44bfd8efe4f2e0004a968d0fc063cbf
 			player.setMoved(true);
 			player.setY(player.getY() + player.getmoveSpeed());
 			player.setX(player.getX() - player.getmoveSpeed());
@@ -168,7 +176,11 @@ function checkKeyInput(){
 	}
 	//S + D
 	else if(keys.isDown(83) && keys.isDown(68)){
+<<<<<<< HEAD
 		if(player.getY()>80 && player.getX() > 14){
+=======
+		if(player.getY() <545 && player.getX()<785){
+>>>>>>> 5d680005d44bfd8efe4f2e0004a968d0fc063cbf
 			player.setMoved(true);
 			player.setY(player.getY() + player.getmoveSpeed());
 			player.setX(player.getX() + player.getmoveSpeed());
@@ -213,7 +225,6 @@ function drawElements(){
 	Could be removed without consequence.*/
 	if(typeof context !== 'undefined'){
 		mousePosition();
-
 		context.clearRect(0,0, canvas.width, canvas.height);
 
 		context.drawImage(backgroundCanvas, 0, 0, canvas.width, canvas.height);
